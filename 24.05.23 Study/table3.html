@@ -1,0 +1,107 @@
+<!-- table3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오전수업 테스트</title>
+
+    <!-- CSS 와 JAVA에서 사용하는 폰트 변경 방법 
+    1. 태그이름
+    2. ID사용(#)
+    3. Class 사용(.) 
+
+<style type="text/css"> 
+    th{font-size:30px;}
+    #title_school{font-size:50px;}
+    .title{font-size: 15px;}
+    </style>
+ -->
+
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gaegu&display=swap');
+
+       /* td{
+        border-width:1px;
+        border-color:black;
+        border-style:sild;
+    } */
+    
+    table{
+        border-collapse:collapse /* 테이블 셀 간의 간격 제거 */
+    }
+
+    th,td{border:2px solid black}
+
+
+.W100{width:100px;}
+.W80{width:80px;}
+tr{height:40px;}
+
+.bg_yellow{
+    background: yellow;}
+.bg_YG{background: yellowgreen;}
+
+td:hover{
+    /* background: #ccc;
+    font-size: 20px;
+    font-weight: 200; */
+    /* font-family:휴먼옛체; */
+    
+    
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color:blue
+
+}
+
+</style>
+
+
+</head>
+<body>
+    <table>
+        <thead >
+            <tr>
+                <th id="title_school" class="W100 bg_yellow">학교명</th>
+                <th class="W100 bg_yellow">학과명</th>
+                <th class="W100 bg_YG">이름</th>
+                <th class="W80 bg_YG">성적</th>
+            </tr>
+        </thead>
+        <tbody class="title">
+            <tr align="center">
+                <td>DW스쿨</td>
+                <td>코딩학과</td>
+                <td>김삼삼</td>
+                <td>4.0</td>
+            </tr>
+            <tr align="center">
+                <td>DW스쿨</td>
+                <td>드론학과</td>
+                <td>김이이</td>
+                <td>3.7</td>
+            </tr>
+            <tr align="center">
+                <td>DW스쿨</td>
+                <td>융합과</td>
+                <td>김일일</td>
+                <td>4.3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="bg_yellow">학교명</th>
+                <th class="bg_yellow">학과명</th>
+                <th class="bg_YG">이름</th>
+                <th class="bg_YG">성적</th>
+            </tr>
+        </tfoot>
+    </table> 
+
+    
+    
+</body>
+</html>
